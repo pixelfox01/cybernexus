@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Specifications and Requirements</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body><center>
+  <h1>Input Specifications and Requirements</h1> <br>
+  <label for="hardware">Select a Hardware:</label>
+  <select name="hardware" id="hardware">
+    <option value="mouse">Mouse</option>
+    <option value="keyboard">Keyboard</option>
+    <option value="monitor">Monitor</option>
+    <option value="laptop">Laptop</option>
+    <option value="desktop">Desktop</option>
+    <option value="headset">Headset</option>
+  </select><br>
+  <button type="button" id="needLiteracy">Don't Need It </button><br>
+  <button type="button" id="confirm">Confirm</button>
+  
+  <script>
+    document.getElementById("needLiteracy").addEventListener("click", function() {
+      alert("Please read the input specifications and requirements before selecting the hardware.");
+      window.location.href="index.html";
+    });
+   
+    
+    document.getElementById("confirm").addEventListener("click", function() {
+      alert("Your selection has been confirmed.");
+      window.location.href="needliteracy.html";
+    });
+  </script>
+  <a href="javascript:if(confirm('Do you want to log out?')) { window.location='index.html';}">Log Out</a>
+</center>
+</body>
+</html>
+   

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Verification</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body><center>
+
+<h2> Sheridan College Email Verification</h2>
+
+<input type="email" id="email" placeholder="Enter your email here"> <br>
+<button onclick="sendVerificationEmail()">Verify</button>
+
+<script>
+  function sendVerificationEmail() {
+    var email = document.getElementById("email").value;
+    
+    // code to send verification email
+
+    alert("Verification Email sent successfully");
+    window.location.href="needhardware.html";
+  }
+</script>
+</center>
+</body>
+</html>

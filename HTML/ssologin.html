@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+    <head> <link rel="stylesheet" type="text/css" href="stylesheet.css"></head>
+<body>
+<center>
+<h2>Please enter your school email</h2><br>
+
+<input type="text" id="school_email">  <br> <br>
+<button onclick="myFunction()">Verify</button>
+
+<script>
+function myFunction() {
+  var school_email = document.getElementById("school_email").value;
+  var subdomain = school_email.split('@')[1].split('.')[0];
+  window.location.href = subdomain + ".html";
+}
+</script>
+<a href="javascript:if(confirm('Do you want to log out?')) { window.location='index.html';}">Log Out</a>
+</center>
+</body>
+</html>

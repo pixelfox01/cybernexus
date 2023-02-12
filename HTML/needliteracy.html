@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Do You Need Literacy Support ?</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+    <body><center>
+        <h1>Do You Need Literacy Support ?</h1> <br>
+        <form>
+            <label>Select Support Type</label> 
+            <select id="supportType" name="supportType" required>
+                <option value="SoftwareInstallation">Software Installation</option>
+                <option value="HardwareSupport">Hardware Support</option>
+                <option value="DigitalLiteracy">Digital Literacy</option>
+                <option value="Troubleshooting">Troubleshooting</option>
+            </select> <br>
+            <label>Virtual Workshop Time</label>
+            <select id="workshopTime" name="workshopTime" required>
+                <option value="12AM">12 AM</option>
+                <option value="1AM">1 AM</option>
+                <option value="2AM">2 AM</option>
+                <option value="3AM">3 AM</option>
+                <option value="4AM">4 AM</option>
+                <option value="5AM">5 AM</option>
+                <option value="6AM">6 AM</option>
+                <option value="7AM">7 AM</option>
+                <option value="8AM">8 AM</option>
+                <option value="9AM">9 AM</option>
+                <option value="10AM">10 AM</option>
+                <option value="11AM">11 AM</option>
+                <option value="12PM">12 PM</option>
+                <option value="1PM">1 PM</option>
+                <option value="2PM">2 PM</option>
+                <option value="3PM">3 PM</option>
+                <option value="4PM">4 PM</option>
+                <option value="5PM">5 PM</option>
+                <option value="6PM">6 PM</option>
+                <option value="7PM">7 PM</option>
+                <option value="8PM">8 PM</option>
+                <option value="9PM">9 PM</option>
+                <option value="10PM">10 PM</option>
+                <option value="11PM">11 PM</option>
+            </select> <br> <br>
+            <input id ="btn" type="submit" onclick="getSelectedOptions()"  value="Submit">
+        </form>
+        <script>
+            function getSelectedOptions(){
+                var selectedSupportType = document.getElementById("supportType").value;
+                var selectedWorkshopTime = document.getElementById("workshopTime").value;
+
+                alert("You have selected: \nSupport Type: "+selectedSupportType+"\nWorkshop Time: "+selectedWorkshopTime + " Thanks for using CyberNexus.");
+                window.location.href="index.html" ;
+            }
+
+        </script> <br>
+        <a href="javascript:if(confirm('Do you want to log out?')) { window.location='index.html';}">Log Out</a>
+    </center> </body>
+</html>
